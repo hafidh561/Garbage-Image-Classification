@@ -8,7 +8,7 @@ WORKDIR /home/app
 RUN apt-get update -y && apt-get upgrade -y && apt-get install git -y
 
 # Copy all files into working directory
-COPY app.py requirements.txt download_models.py /home/app/
+COPY app.py requirements.txt download_model.py /home/app/
 
 # Download all packages python
 RUN git clone https://github.com/nodefluxio/vortex.git && \
