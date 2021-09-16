@@ -19,11 +19,5 @@ pip install -r requirements.txt
 # Download models
 RUN python download_models.py
 
-# (OPTIONAL) Set Environment variable for port
-ENV PORT=6969
-
-# Expose Port
-EXPOSE ${PORT}
-
 # Run script
 CMD ["python", "app.py"]
