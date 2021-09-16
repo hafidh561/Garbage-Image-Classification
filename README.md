@@ -71,6 +71,10 @@ $ docker run --rm -p 6969:6969 hafidh561/garbage-image-classification:1.0
 }
 ```
 
+## Report Article
+
+-   [Indonesian Language](https://docs.google.com/document/d/1w12SAlME0w9xAGnaB3kgvrVVqNbADNlxk2_pyF-LylM/edit?usp=sharing)
+
 ## License
 
 [MIT LICENSE](./LICENSE)
