@@ -18,7 +18,7 @@ $ git clone https://github.com/nodefluxio/vortex.git
 $ cd vortex/ && git checkout drop-enforce
 $ pip install ./src/runtime[onnxruntime] && cd../
 $ pip install -r requirements.txt
-$ python download_models.py
+$ python download_model.py
 ```
 
 ### Installation Docker
