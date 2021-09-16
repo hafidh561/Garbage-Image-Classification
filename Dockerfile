@@ -17,7 +17,7 @@ RUN git clone https://github.com/nodefluxio/vortex.git && \
 	pip install ./src/runtime[onnxruntime] && cd ../ && \
 	pip install -r requirements.txt
 
-# Download models
+# Download model
 RUN python download_model.py
 
 # (OPTIONAL) You can use you own port for expose port
