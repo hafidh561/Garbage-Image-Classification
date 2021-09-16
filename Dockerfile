@@ -5,7 +5,7 @@ FROM python:3.6.15-slim
 WORKDIR /home/app
 
 # Install packages
-RUN apt-get update -y && apt-get upgrade -y && apt-get install git -y
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-recommends git
 
 # Copy all files into working directory
 COPY app.py requirements.txt download_model.py /home/app/
