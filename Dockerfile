@@ -14,13 +14,13 @@ COPY app.py requirements.txt download_model.py /home/app/
 # Download all packages python
 RUN git clone https://github.com/nodefluxio/vortex.git && \
 	cd vortex/ && git checkout drop-enforce && \
-	install ./src/runtime[onnxruntime] && cd ../ && \
+	pip install ./src/runtime[onnxruntime] && cd ../ && \
 	pip install -r requirements.txt
 
 # Download models
 RUN python download_model.py
 
-# Expose prt
+# (OPTIONAL) You can use you own port for expose port
 EXPOSE 6969
 
 # Run script
