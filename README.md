@@ -50,7 +50,7 @@ $ docker run --rm -p 301:6969 hafidh561/garbage-image-classification:1.0
 2. Now it's time to testing API, open your application for testing API. I'll use Postman for testing API.
 3. Set up postman like this.
 
-    ![postman_body](screenshots/ss1.png)
+    ![postman_body](screenshots/ss0.png)
 
 4. Press button "Select Files" to select image you want to classification.
 5. Press "Send" button and waiting for response.
