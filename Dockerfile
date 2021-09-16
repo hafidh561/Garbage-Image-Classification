@@ -17,7 +17,10 @@ pip install ./src/runtime[onnxruntime] && cd ../ && \
 pip install -r requirements.txt
 
 # Download models
-RUN python download_models.py
+RUN python download_model.py
+
+# Expose prt
+EXPOSE 6969
 
 # Run script
 CMD ["python", "app.py"]
