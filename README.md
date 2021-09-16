@@ -75,7 +75,7 @@ $ docker run --rm -p 301:6969 hafidh561/garbage-image-classification:1.0
 
 ## Give It a Try
 
-[Google Colab](https://drive.google.com/file/d/1JzcSHE1Evae__zj3bujTb_O-lEOaILk1/view?usp=sharing)
+If you want make your own deep learning for image classification? Give it a try in this [Google Colab](https://colab.research.google.com/github/hafidh561/Garbage-Image-Classification/blob/main/training_model.ipynb)
 
 ## License
 
