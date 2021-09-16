@@ -33,14 +33,14 @@ $ docker build -t hafidh561/garbage-image-classification:1.0 .
 ### Usage Python
 
 ```bash
-$ uvicorn app:app --port <YOUR PORT>
-# Example
-$ uvicorn app:app --port 6969
+# If you want set your port, you just edit in file app.py
+$ python app.py
 ```
 
 ### Usage Docker
 
 ```bash
+# If you want set your port, you just edit in file Dockerfile
 $ docker run --rm -p <YOUR PORT>:<YOUR PORT> hafidh561/garbage-image-classification:1.0
 # Example
 $ docker run --rm -p 6969:6969 hafidh561/garbage-image-classification:1.0
@@ -48,7 +48,7 @@ $ docker run --rm -p 6969:6969 hafidh561/garbage-image-classification:1.0
 
 ### Usage API
 
-1. After you run app use python or docker, open your web browser and go to path `/docs` for looksing some documentation.
+1. After you run app use python or docker, open your web browser and go to http://localhost:<YOUR PORT>/docs for looksing some documentation.
 2. Now it's time to testing API, open your application for testing API. I'll use Postman for testing API.
 3. Set up postman like this.
 

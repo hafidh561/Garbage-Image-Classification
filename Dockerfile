@@ -5,25 +5,25 @@ FROM python:3.6.15-slim
 WORKDIR /home/app
 
 # Install packages
-RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get update -y && apt-get upgrade -y && apt-get install git -y
 
 # Copy all files into working directory
 COPY app.py requirements.txt download_models.py /home/app/
 
-# Instal python libraries
-RUN pip install -r requirements.txt
+# Download all packages python
+RUN git clone https://github.com/nodefluxio/vortex.git && \
+cd vortex/ && git checkout drop-enforce && \
+pip install ./src/runtime[onnxruntime] && cd../ && \
+pip install -r requirements.txt
 
 # Download models
 RUN python download_models.py
 
-# Move Main Model
-COPY saved_model.pth /home/app/
-
-# Move Pretrained Model
-COPY resnet152-394f9c45.pth /root/.cache/torch/hub/checkpoints/
+# (OPTIONAL) Set Environment variable for port
+ENV PORT=6969
 
 # Expose Port
-EXPOSE 80
+EXPOSE ${PORT}
 
 # Run script
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["python", "app.py"]

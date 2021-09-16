@@ -4,7 +4,10 @@ from torchvision import transforms
 import vortex.runtime as vrt
 from PIL import Image
 import numpy as np
+import uvicorn
 import io
+import os
+
 
 # Load Model and Create Variable
 mean = [0.485, 0.456, 0.406]
@@ -55,3 +58,8 @@ async def predict(file: UploadFile = File(...)):
         }
     except:
         return Response("Internal server error", status_code=500)
+
+
+if __name__ == "__main__":
+    port = os.environ.get("PORT") if os.environ.get("PORT") else 6969
+    uvicorn.run(app, host="0.0.0.0", port=port)
