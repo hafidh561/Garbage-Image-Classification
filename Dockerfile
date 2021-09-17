@@ -6,7 +6,7 @@ WORKDIR /home/app
 
 # Install packages
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-recommends git && \
-	apt-get install libsm6 libxrender-dev -y
+	apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6
 
 # Copy all files into working directory
 COPY app.py requirements.txt download_model.py /home/app/
