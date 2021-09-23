@@ -16,7 +16,7 @@ $ git clone https://github.com/hafidh561/Garbage-Image-Classification.git
 # Python version 3.6
 $ git clone https://github.com/nodefluxio/vortex.git
 $ cd vortex/ && git checkout drop-enforce
-$ pip install ./src/runtime[onnxruntime] && cd../
+$ pip install ./src/runtime[onnxruntime] && cd ../
 $ pip install -r requirements.txt
 $ python download_model.py
 ```
@@ -46,7 +46,7 @@ $ docker run --rm -p 301:6969 hafidh561/garbage-image-classification:1.0
 
 ### Usage API
 
-1. After you run app use python or docker, open your web browser and go to http://localhost:<YOUR PORT | 6969>/docs for looksing some documentation.
+1. After you run app use python or docker, open your web browser and go to `http://localhost:<YOUR PORT | 6969>/docs` for looksing some documentation.
 2. Now it's time to testing API, open your application for testing API. I'll use Postman for testing API.
 3. Set up postman like this.
 
@@ -54,7 +54,7 @@ $ docker run --rm -p 301:6969 hafidh561/garbage-image-classification:1.0
 
 4. Press button "Select Files" to select image you want to classification.
 5. Press "Send" button and waiting for response.
-6. Now open response body and look object response member "class" and search for highest value.
+6. Now open response body and look object response member ***class*** and search for highest value.
 
 #### Example Test API
 
