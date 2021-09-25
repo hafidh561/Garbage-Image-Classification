@@ -54,11 +54,11 @@ $ docker run --rm -p 301:6969 hafidh561/garbage-image-classification:1.0
 
 4. Press button "Select Files" to select image you want to classification.
 5. Press "Send" button and waiting for response.
-6. Now open response body and look object response member ***class*** and search for highest value.
+6. Now open response body and look object response member **_class_** and search for highest value.
 
 #### Example Test API
 
-![metal](./test_model/glass.jpg)
+![glass](./screenshots/ss1.jpg)
 
 ```json
 {
