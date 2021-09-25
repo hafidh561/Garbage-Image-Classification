@@ -46,7 +46,7 @@ $ docker run --rm -p 301:6969 hafidh561/garbage-image-classification:1.0
 
 ### Usage API
 
-1. After you run app use python or docker, open your web browser and go to `http://localhost:<YOUR PORT | 6969>/docs` for looksing some documentation.
+1. After you run app use python or docker, open your web browser and go to `http://localhost:<YOUR PORT | 6969>/docs` for looking some documentation.
 2. Now it's time to testing API, open your application for testing API. I'll use Postman for testing API.
 3. Set up postman like this.
 
