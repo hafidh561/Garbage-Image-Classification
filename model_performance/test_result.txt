@@ -1,0 +1,26 @@
+DATALOADER:0 TEST RESULTS
+{'accuracy': 0.9582366589327146,
+ 'f1_score (macro)': 0.9549606016094604,
+ 'f1_score (micro)': 0.9582366589327146,
+ 'f1_score (weighted)': 0.9582031147796972,
+ 'precision (macro)': 0.9540035087030173,
+ 'precision (micro)': 0.9582366589327146,
+ 'precision (weighted)': 0.9602192080955329,
+ 'recall (macro)': 0.9578724715744621,
+ 'recall (micro)': 0.9582366589327146,
+ 'recall (weighted)': 0.9582366589327146}
+--------------------------------------------------------------------------------
+on_fit_start : 2.4318695068359375e-05 (mean); 2.4318695068359375e-05 (median);
+cache_result : 1.8780965071458084e-05 (mean); 1.5020370483398438e-05 (median);
+run_test_evaluation : 226.28926539421082 (mean); 226.28926539421082 (median);
+on_test_start : 0.05049610137939453 (mean); 0.05049610137939453 (median);
+on_test_epoch_start : 3.504753112792969e-05 (mean); 3.504753112792969e-05 (median);
+on_test_batch_start : 4.455716869947252e-05 (mean); 3.695487976074219e-05 (median);
+evaluation_step_and_end : 0.5186916946535044 (mean); 0.5183675289154053 (median);
+runtime_call : 0.5181386321437331 (mean); 0.5178003311157227 (median);
+timedata: plot/runtime_call.png
+test_step_end : 1.850150300842427e-05 (mean); 1.6927719116210938e-05 (median);
+on_test_batch_end : 0.0012878835062969589 (mean); 0.0011196136474609375 (median);
+on_test_epoch_end : 3.933906555175781e-05 (mean); 3.933906555175781e-05 (median);
+on_test_end : 0.001039266586303711 (mean); 0.001039266586303711 (median);
+on_fit_end : 2.7179718017578125e-05 (mean); 2.7179718017578125e-05 (median);
